@@ -22,7 +22,7 @@ public class BankAccountTest {
 		final long depositAmount = 11;
 		final BankAccount account = new BankAccount(initial);
 		account.deposit(depositAmount);
-		assertEquals((initial + depositAmount), account.getBalance());
+		assertEquals(30, account.getBalance());
 	}
 	
 	@Test
@@ -31,7 +31,7 @@ public class BankAccountTest {
 		final long withdrawAmount = 11;
 		final BankAccount account = new BankAccount(initial);
 		account.withdraw(withdrawAmount);
-		assertEquals((initial - withdrawAmount), account.getBalance());
+		assertEquals(8, account.getBalance());
 	}
 	
 	@Test
